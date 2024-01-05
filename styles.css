@@ -214,6 +214,10 @@ hr {
   margin-bottom: 0;
 }
 
+.projectItem > p {
+    text-align: center;
+}
+
 #projects img {
   box-sizing: border-box;
   height: 25em;
