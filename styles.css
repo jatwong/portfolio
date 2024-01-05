@@ -16,6 +16,13 @@ p {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   color: #3f3d56;
+  font-size: 2em;
+}
+
+h1,
+h2 {
+  font-family: "Inria Serif", serif;
+  color: #3f3d56;
 }
 
 .container {
@@ -57,10 +64,8 @@ p {
 }
 
 #hero > h1 {
-  font-family: "Inria Serif", serif;
   font-weight: 700;
   font-size: 4em;
-  color: #3f3d56;
   margin: 0;
 }
 
@@ -107,9 +112,7 @@ h1 > span {
 }
 
 .aboutText > h2 {
-  font-family: "Inria Serif", serif;
   font-weight: 400;
-  color: #3f3d56;
   font-size: 3em;
 }
 
@@ -136,18 +139,19 @@ h1 > span {
 }
 
 .skillsContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  width: 80%;
 }
 
 .skillsItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  text-align: center;
 }
 
 .skillsTitle {
@@ -163,7 +167,7 @@ h1 > span {
 }
 
 .frontend {
-    width: 240px;
+  width: 240px;
 }
 
 .skillsTitle > p {
@@ -171,18 +175,65 @@ h1 > span {
   font-size: 2em;
 }
 
-.blurb {
-  font-size: 1.5em;
-  text-align: center;
+hr {
+  border: 2.5px solid #ff6584;
+  width: 20rem;
+  border-radius: 10px;
 }
 
 #projects {
-    margin: 3rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #projects > h2 {
-    font-family: 'Inria Serif', serif;  
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 3rem 0 5rem 0;
+}
+
+.projectItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectItem > h2 {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+#projects img {
+  box-sizing: border-box;
+  height: 25em;
+  width: 35em;
+  object-fit: cover;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(63, 61, 86, 0.2);
+}
+
+.outline {
+  position: relative;
+}
+
+.outline::after {
+  content: "";
+  outline: black 1px solid;
+  border-radius: 30px;
+  inset: 0;
+  position: absolute;
+  transform: translate(-15px, -15px);
+  z-index: -1;
 }
