@@ -259,7 +259,7 @@ hr {
 }
 
 .contactCta > button {
-  background-color: #ABDFE2;
+  background-color: #abdfe2;
   border: none;
   border-radius: 100px;
   font-size: 2em;
@@ -272,5 +272,15 @@ hr {
 }
 
 .contactCta > button:focus-visible {
-    outline: none;
+  outline: none;
+}
+
+footer {
+  position: relative;
+  margin-top: 10rem;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.5em;
+  border-bottom: #abdfe2 20px solid;
 }
