@@ -271,6 +271,10 @@ hr {
   margin-top: 2em;
 }
 
+.contactCta > button:hover {
+    cursor: pointer;
+}
+
 .contactCta > button:focus-visible {
   outline: none;
 }
