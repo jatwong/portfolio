@@ -6,3 +6,11 @@ This portfolio website is completely coded from scratch with HTML and CSS, and i
 
 Illustrations credited Katerina Limpitsouni at unDraw
 UI icons credited to UXWing
+
+## Screenshots
+![Screenshot of portfolio site hero](./images/portfolio_hero.png)
+
+![Screenshot of portfolio projects section](./images/portfolio_projects.png)
+
+## Next Steps
+- Improve responsiveness
