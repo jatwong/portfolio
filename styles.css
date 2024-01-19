@@ -289,10 +289,13 @@ hr {
   height: 2.5em;
   width: 8em;
   margin-top: 2em;
+  transition: transform 0.3s ease;
 }
 
 .contactCta > button:hover {
     cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .contactCta > button:focus-visible {
