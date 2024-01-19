@@ -23,3 +23,4 @@ UI icons credited to UXWing
 ## Next Steps
 
 - Improve responsiveness
+- Expand on the contact section, such as creating a contact form

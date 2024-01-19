@@ -278,7 +278,7 @@ hr {
   text-align: center;
 }
 
-.contactCta > button {
+.contactCta button {
   background-color: #abdfe2;
   border: none;
   border-radius: 100px;
@@ -292,13 +292,13 @@ hr {
   transition: transform 0.3s ease;
 }
 
-.contactCta > button:hover {
+.contactCta button:hover {
     cursor: pointer;
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
 
-.contactCta > button:focus-visible {
+.contactCta button:focus-visible {
   outline: none;
 }
 
