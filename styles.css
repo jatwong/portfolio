@@ -208,11 +208,19 @@ hr {
   text-align: center;
 }
 
-.projectItem > h2 {
+.projectItem a {
+  text-decoration: none;
+}
+
+.projectItem h2 {
   font-weight: 400;
   font-style: italic;
   font-size: 2em;
   margin-bottom: 0;
+}
+
+.projectItem a:hover h2 {
+  color: #ff6584;
 }
 
 #projects img {
@@ -227,6 +235,7 @@ hr {
 
 .outline {
   position: relative;
+  transition: transform 0.3s ease;
 }
 
 .outline::after {
@@ -237,6 +246,17 @@ hr {
   position: absolute;
   transform: translate(-15px, -15px);
   z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.projectItem a:hover .outline {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.projectItem a:hover .outline::after {
+  transform: translate(-22px, -25px);
+  transition: transform 0.3s ease;
 }
 
 #contact {
@@ -286,4 +306,8 @@ footer {
   text-align: center;
   font-size: 0.5em;
   border-bottom: #abdfe2 20px solid;
+}
+
+a:hover {
+  color: #ff6584;
 }
