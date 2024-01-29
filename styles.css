@@ -194,18 +194,19 @@ hr {
 }
 
 .projectsContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: repeat(auto, 400px);
+  justify-items: center;
   width: 90%;
-  margin: 5rem 0 5rem 0;
+  margin: 3rem 0;
+  gap: 3rem;
 }
 
 .projectItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 450px;
   text-align: center;
+  margin: 0 2em;
 }
 
 .projectItem a {
@@ -215,7 +216,7 @@ hr {
 .projectItem h2 {
   font-weight: 400;
   font-style: italic;
-  font-size: 2em;
+  font-size: 1.75em;
   margin-bottom: 0;
 }
 
@@ -225,8 +226,8 @@ hr {
 
 #projects img {
   box-sizing: border-box;
-  height: 25em;
-  width: 35em;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   background-color: #d9d9d9;
   border-radius: 20px;
@@ -235,6 +236,8 @@ hr {
 
 .outline {
   position: relative;
+  height: 350px;
+  width: 100%;
   transition: transform 0.3s ease;
 }
 
