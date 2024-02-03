@@ -41,15 +41,16 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 5rem;
 }
 
 #logo {
-  height: 165px;
+  height: 10.5rem;
 }
 
 .navLinks {
   display: flex;
-  width: 550px;
+  width: 35rem;
   justify-content: space-between;
 }
 
@@ -82,6 +83,7 @@ h1 span {
 #hero p {
   font-size: 2.5em;
   margin: 0.5em 0;
+  text-align: center;
 }
 
 #hero img {
@@ -103,11 +105,11 @@ h1 span {
 .aboutContainer {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  gap: 2em;
+  gap: 4em;
   min-height: 600px;
   align-items: center;
   justify-items: center;
-  padding: 2em 6em;
+  padding: 2em 4em;
   width: 75%;
 }
 
@@ -199,11 +201,10 @@ hr {
 .projectsContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-template-rows: repeat(auto, 400px);
   justify-items: center;
   width: 90%;
   margin: 3rem 0;
-  gap: 3rem;
+  gap: 5rem;
 }
 
 .projectItem {
@@ -270,10 +271,11 @@ hr {
   justify-content: space-evenly;
   align-items: center;
   margin: 3rem 0;
+  gap: 5rem;
 }
 
 #contact img {
-  height: 25rem;
+  height: 30rem;
 }
 
 .contactCta {
@@ -299,9 +301,9 @@ hr {
 }
 
 .contactCta button:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .contactCta button:focus-visible {
@@ -319,4 +321,86 @@ footer {
 
 a:hover {
   color: #ff6584;
+}
+
+@media (max-width: 320px) {
+  #logo {
+    height: 8rem;
+  }
+
+  #hero p {
+    font-size: 1.5em;
+  }
+
+  #hero img {
+    height: 15rem;
+  }
+
+  #contact img {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #logo {
+    height: 8rem;
+  }
+
+  #hero img {
+    height: 23rem;
+  }
+
+  #hero p {
+    font-size: 1.8em;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pfp {
+    height: 15em;
+    margin-top: 2em;
+  }
+
+  .aboutText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutText h2 {
+    margin-top: 0;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  .contactCta {
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  #hero p {
+    font-size: 1.6em;
+  }
+
+  .skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    width: auto;
+    justify-content: center;
+  }
+
+  .skillsItem p {
+    font-size: 1.4em;
+  }
+
+  #contact img {
+    height: 25rem;
+  }
 }
