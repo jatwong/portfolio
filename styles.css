@@ -476,12 +476,17 @@ a:hover {
   .showMenu {
     display: grid;
   }
-  
+
   #hero.marginTop {
     margin-top: 21rem;
   }
 }
 
+@media (max-width: 500px) {
+  .projectsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+}
 @media (max-width: 375px) {
   #hero h1 {
     font-size: 2em;
@@ -490,7 +495,7 @@ a:hover {
   #hero img {
     height: 10rem;
   }
-  
+
   #hero p {
     font-size: 1.3em;
   }
@@ -517,10 +522,6 @@ a:hover {
 
   hr {
     width: 15rem;
-  }
-
-  .projectsContainer {
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
   }
 
   .contactCta p {
