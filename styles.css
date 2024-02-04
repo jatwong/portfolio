@@ -490,17 +490,13 @@ a:hover {
 
 @media (max-width: 425px) {
   #hero img {
-    height: 13rem;
+    height: 10rem;
   }
 }
 
 @media (max-width: 375px) {
   #hero h1 {
     font-size: 2em;
-  }
-
-  #hero img {
-    height: 10rem;
   }
 
   #hero p {
