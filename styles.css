@@ -487,6 +487,13 @@ a:hover {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   }
 }
+
+@media (max-width: 425px) {
+  #hero img {
+    height: 13rem;
+  }
+}
+
 @media (max-width: 375px) {
   #hero h1 {
     font-size: 2em;
