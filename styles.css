@@ -30,6 +30,24 @@ h2 {
   font-size: 3em;
 }
 
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.7;
+  z-index: 5;
+}
+
+#back-to-top:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#back-to-top.showBtn {
+  display: block;
+}
+
 .menu {
   display: none;
 }
@@ -393,6 +411,13 @@ a:hover {
   #contact img {
     height: 23rem;
   }
+
+  #back-to-top {
+    bottom: 15px;
+    right: 15px;
+    opacity: 1;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -544,5 +569,10 @@ a:hover {
 
   .contactCta p {
     font-size: 1.4em;
+  }
+
+  #back-to-top {
+    bottom: 13px;
+    right: 13px;
   }
 }
