@@ -78,6 +78,7 @@ h2 {
   font-weight: 700;
   font-size: 4em;
   margin: 0;
+  text-align: center;
 }
 
 h1 span {
@@ -85,7 +86,7 @@ h1 span {
 }
 
 #hero p {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0.5em 0;
   text-align: center;
 }
@@ -103,7 +104,7 @@ h1 span {
   background-color: #d3f1f2;
   height: fit-content;
   margin-bottom: 5rem;
-  box-shadow: 0px 12px 30px -5px rgba(63, 61, 86, 0.15);
+  box-shadow: 0px 12px 20px -5px rgba(63, 61, 86, 0.15);
 }
 
 .aboutContainer {
@@ -440,16 +441,18 @@ a:hover {
 
   .navLinks {
     display: grid;
+    display: none;
     grid-template-rows: repeat(4, 1fr);
     position: absolute;
     height: 18rem;
-    background-color: cornsilk;
+    background-color: white;
     justify-content: center;
     left: 0;
     align-items: center;
     justify-items: center;
     top: 9rem;
     width: 100%;
+    box-shadow: 0px 12px 20px -5px rgba(63, 61, 86, 0.15);
   }
 
   .menu {
@@ -474,8 +477,12 @@ a:hover {
 }
 
 @media (max-width: 375px) {
-  .projectsContainer {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  #hero h1 {
+    font-size: 2em;
+  }
+
+  #hero p {
+    font-size: 1.3em;
   }
 
   .outline {
@@ -492,5 +499,13 @@ a:hover {
 
   .aboutText p {
     font-size: 1.5em;
+  }
+
+  .skillsItem p {
+    font-size: 1.3em;
+  }
+
+  .projectsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
