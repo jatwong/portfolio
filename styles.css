@@ -30,6 +30,10 @@ h2 {
   font-size: 3em;
 }
 
+.menu {
+  display: none;
+}
+
 .container {
   padding: 1rem 6rem;
   width: 100%;
@@ -323,27 +327,22 @@ a:hover {
   color: #ff6584;
 }
 
-@media (max-width: 320px) {
+/* for screens 1024px and smaller */
+@media (max-width: 1024px) {
   #logo {
     height: 8rem;
   }
 
-  #hero p {
-    font-size: 1.5em;
+  .container {
+    padding: 1rem 4rem;
   }
 
-  #hero img {
-    height: 15rem;
+  .navLinks {
+    width: 30rem;
   }
 
-  #contact img {
-    height: 15rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #logo {
-    height: 8rem;
+  #hero h1 {
+    font-size: 3em;
   }
 
   #hero img {
@@ -351,7 +350,7 @@ a:hover {
   }
 
   #hero p {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   .aboutContainer {
@@ -374,20 +373,6 @@ a:hover {
     margin-top: 0;
   }
 
-  #contact {
-    flex-direction: column;
-  }
-
-  .contactCta {
-    width: auto;
-  }
-}
-
-@media (max-width: 1024px) {
-  #hero p {
-    font-size: 1.6em;
-  }
-
   .skillsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -397,10 +382,115 @@ a:hover {
   }
 
   .skillsItem p {
-    font-size: 1.4em;
+    font-size: 1.6em;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  .contactCta {
+    width: auto;
   }
 
   #contact img {
-    height: 25rem;
+    height: 23rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #logo {
+    height: 6rem;
+  }
+
+  .container {
+    padding: 1em 2em;
+  }
+
+  .navLinks a {
+    font-size: 1.8em;
+  }
+
+  #hero img {
+    height: 18rem;
+  }
+
+  .pfp {
+    height: 13em;
+  }
+
+  .contactCta h2 {
+    font-size: 2.5em;
+  }
+
+  #contact img {
+    height: 18rem;
+  }
+
+  .contactCta button {
+    font-size: 1.5em;
+  }
+}
+
+/* for screens 600px and smaller */
+@media (max-width: 600px) {
+  #logo {
+    height: 8rem;
+  }
+
+  .navLinks {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    position: absolute;
+    height: 18rem;
+    background-color: cornsilk;
+    justify-content: center;
+    left: 0;
+    align-items: center;
+    justify-items: center;
+    top: 9rem;
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  #hero p {
+    font-size: 1.5em;
+  }
+
+  #hero img {
+    height: 12rem;
+  }
+
+  .aboutContainer {
+    padding: 2em 0;
+  }
+
+  #contact img {
+    height: 12rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .projectsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .outline {
+    height: 230px;
+  }
+
+  .pfp {
+    height: 11em;
+  }
+
+  .aboutText h2 {
+    font-size: 2.5em;
+  }
+
+  .aboutText p {
+    font-size: 1.5em;
   }
 }
