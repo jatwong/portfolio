@@ -400,7 +400,7 @@ a:hover {
 
 @media (max-width: 768px) {
   #logo {
-    height: 6rem;
+    height: 8rem;
   }
 
   .container {
@@ -435,7 +435,7 @@ a:hover {
 /* for screens 600px and smaller */
 @media (max-width: 600px) {
   #logo {
-    height: 8rem;
+    height: 6rem;
   }
 
   #hero {
