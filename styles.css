@@ -417,7 +417,6 @@ a:hover {
     right: 15px;
     opacity: 1;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -458,6 +457,10 @@ a:hover {
 @media (max-width: 600px) {
   #logo {
     height: 6rem;
+  }
+
+  p {
+    font-size: 1.5em;
   }
 
   #hero {
@@ -524,6 +527,10 @@ a:hover {
 @media (max-width: 500px) {
   .projectsContainer {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+
+  .skillsItem p {
+    font-size: 1.4em;
   }
 }
 
