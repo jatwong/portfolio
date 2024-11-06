@@ -37,6 +37,7 @@ h2 {
   right: 20px;
   opacity: 0.7;
   z-index: 5;
+  width: 5rem;
 }
 
 #back-to-top:hover {
@@ -305,15 +306,49 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
+  width: 50%;
   text-align: center;
 }
 
-.contactCta button {
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #3f3d56;
+  width: 80%;
+  align-items: center;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0;
+  gap: 5px;
+  width: 100%;
+}
+
+form label {
+  text-align: left;
+}
+
+form input, form textarea {
+  border: none;
+  border-radius: 5px;
+  background-color: #EBF7F8;
+  padding: 5px 10px;
+  resize: none;
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #3f3d56;
+}
+
+.submitForm {
   background-color: #abdfe2;
   border: none;
   border-radius: 100px;
-  font-size: 2em;
+  font-size: 1em;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   color: #3f3d56;
@@ -323,13 +358,13 @@ hr {
   transition: transform 0.3s ease;
 }
 
-.contactCta button:hover {
+.submitForm:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
 
-.contactCta button:focus-visible {
+.submitForm:focus-visible {
   outline: none;
 }
 
@@ -521,6 +556,10 @@ a:hover {
   #hero.marginTop {
     margin-top: 21rem;
     transition: margin-top 0.5s ease-out;
+  }
+
+  #back-to-top {
+    width: 4rem;
   }
 }
 
