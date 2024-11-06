@@ -3,7 +3,7 @@ const dropdown = document.querySelector(".navLinks");
 const links = document.querySelectorAll(".navLinks a");
 const hero = document.querySelector("#hero");
 const backToTop = document.querySelector("#back-to-top");
-const BACKEND_API = "https://emailjs-proxy.vercel.app/";
+const BACKEND_API = "https://emailjs-proxy.vercel.app/submit";
 
 const closeMenu = () => {
   menu.setAttribute("src", "./ui/icons/menu.svg");
