@@ -296,18 +296,26 @@ hr {
   align-items: center;
   margin: 3rem 0;
   gap: 5rem;
+  flex-wrap: wrap;
 }
 
-#contact img {
-  height: 30rem;
+.contactImg {
+  width: 35rem;
+  height: auto;
+  flex-shrink: 2;
+}
+
+.contactImg img {
+  width: 100%;
 }
 
 .contactCta {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 55rem;
   text-align: center;
+  flex-shrink: 0;
 }
 
 form {
@@ -435,11 +443,8 @@ a:hover {
     font-size: 1.6em;
   }
 
-  #contact {
-    flex-direction: column;
-  }
-
   .contactCta {
+    min-width: 40rem;
     width: auto;
   }
 
@@ -547,6 +552,10 @@ a:hover {
     height: 12rem;
   }
 
+  .contactCta {
+    min-width: 30rem;
+  }
+
   /* toggle menu */
   .navLinks.showMenu {
     padding-top: 32rem;
@@ -570,6 +579,10 @@ a:hover {
 
   .skillsItem p {
     font-size: 1.4em;
+  }
+
+  .contactCta {
+    min-width: 20rem;
   }
 }
 
