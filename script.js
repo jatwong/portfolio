@@ -65,7 +65,7 @@ const handleSubmit = async (e) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-      credentials: "same-origin"
+      // credentials: "same-origin"
     });
 
     console.log(response);
