@@ -252,13 +252,14 @@ hr {
   color: #ff6584;
 }
 
-.git {
+.projectItem a.git {
   font-family: 'Inria Serif', serif;
   font-size: 1.25em;
-  color: #3f3d56;
+  color: #3d4756;
+  text-decoration: underline;
 }
 
-.git a:hover {
+.projectItem a.git:hover {
   color: #ff6584;
 }
 
